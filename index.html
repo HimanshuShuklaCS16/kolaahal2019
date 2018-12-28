@@ -8,6 +8,9 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
 
     <!-- Bootstrap CSS -->
+
+    <link rel="stylesheet" type="text/css" href="node_modules/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="node_modules/bootstrap-social/bootstrap-social.css">
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="styles.css">
      <link rel="stylesheet" type="text/css" href="aos-2/dist/aos.css">
@@ -35,7 +38,7 @@
 					</ul>
 				</li>
 				<li>
-					<a href="#informalsubmenu" data-toggle="collapse" class="dropdown-toggle">Informal Events</a>
+					<a href="#informalsubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Informal Events</a>
 					<ul class="collapse list-unstyled" id="informalsubmenu">
 						<li >
 							<a href="#">---</a>
@@ -52,7 +55,13 @@
 			</ul>
 		</nav>
 		<div id="content">
-			
+			<nav class="navbar navbar-expand-lg navbar-light bg-light">
+				<div class="container-fluid">
+					<button id="sidebarCollapse" class="btn btn-info">
+						<i class="fa fa-home"></i>
+					</button>
+				</div>
+			</nav>
 		</div>
 	</div>
 	<header class="jumbotron">
