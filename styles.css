@@ -1,0 +1,16 @@
+.row-header
+{
+    margin:0px auto;
+    padding:0px;
+}
+
+
+.jumbotron
+{
+    background-image: url(image/kola.jpg);
+    background-size: cover;
+    height: 700px;
+      margin: 0px auto;
+  padding: 70px 0px;
+  color: floralwhite; 
+}
