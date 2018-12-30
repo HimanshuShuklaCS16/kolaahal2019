@@ -16,12 +16,16 @@
      <link rel="stylesheet" type="text/css" href="aos-2/dist/aos.css">
 </head>
 <body>
-	<div class="wrapper">
-		<nav id="sidebar">
+<div class="wrapper">
+		<nav id="sidebar" >
+			<div id="dismiss">
+				<p>dismiss</p>
+			</div>
 			<div class="sidebar-header">
-				Events @kolaaHal 2k19
+				Meerut's biggest cultural fest
 			</div>
 			<ul class="list-unstyled components"> 
+				<p>Events @kolaahal 2k19</p>
 				<li class="active">
 					<a href="#formalsubmenu" data-toggle="collapse" class="dropdown-toggle">Formal Events</a>
 					<ul class="collapse list-unstyled" id="formalsubmenu">
@@ -54,17 +58,21 @@
 				</li>
 			</ul>
 		</nav>
-		<div id="content">
-			<nav class="navbar navbar-expand-lg navbar-light bg-light">
-				<div class="container-fluid">
-					<button id="sidebarCollapse" class="btn btn-info">
+		
+		
+	
+
+</div>
+<div class="overlay"></div>
+
+			<header class="jumbotron">
+			<div id="content">
+			<div class="container-fluid">
+					<button id="sidebarCollapse" class="btn btn-info">yoyo
 						<i class="fa fa-home"></i>
 					</button>
 				</div>
-			</nav>
 		</div>
-	</div>
-	<header class="jumbotron">
         <div class="container">
             <div class="row row-header  ">
                 <div class="col-12 col-sm-8 offset-md-2  class="mx-auto" style="width: 100%;">
@@ -75,6 +83,7 @@
             </div>
         </div>
 </header>
+	
 
 <section class="one">
 <div class="container">
@@ -146,6 +155,21 @@
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 
             <script type="text/javascript" src="aos-2/dist/aos.js"></script>
+            <script type="text/javascript">
+            	$(document).ready(function()
+            	{
+            		$('#dismiss,.overlay').on('click',function(){
+            			$('#sidebar').removeClass('active');
+            			$('.overlay').removeClass('active');
+            		});
+            		$('#sidebarCollapse').on('click',function(){
+            			$('#sidebar').toggleClass('active');
+            			$('.overlay').addClass('active');
+            			$('.collapse.in').toggleClass('in');
+            			$('a[aria-expanded=true]').attr('aria-expanded','false');
+            		});
+            	});
+            </script>
             <script type="text/javascript">
             	AOS.init()
             	{
