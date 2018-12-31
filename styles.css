@@ -51,11 +51,18 @@
 }
 #dismiss
 {
-    width:35px;
-    height: 35px;
+    width:20px;
+    height: 20px;
     position: absolute;
-    top: 10px;
-    right:10px;
+    top: 0px;
+    right:0px;
+    cursor: pointer;
+
+}
+#dismiss:hover
+{
+    color: black;
+    background-color:floralwhite;
 }
 #sidebar .sidebar-header {
     padding: 20px;
@@ -136,5 +143,18 @@ a,a:hover,a:focus
     text-decoration:none;
     transition:all 0.3s;
 }
+#sponsors
+{
+    background-color: #ff3333;
+    }
 
+#oursponsor
+{
+    background-color: blue;
+    color: floralwhite;
 
+}
+.footer
+{
+
+}
