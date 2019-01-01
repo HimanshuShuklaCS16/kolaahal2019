@@ -3,14 +3,27 @@
 <head>
 	<title>Registration
 	</title>
+	    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <!-- Bootstrap CSS -->
+
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
+    <link rel="stylesheet" type="text/css" href="node_modules/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="node_modules/bootstrap-social/bootstrap-social.css">
+
+     <link rel="stylesheet" type="text/css" href="aos-2/dist/aos.css">
 </head>
 <body>
 <div class="container">
-	<div class="row row-content">
-		<div class="col">
+	<div class="row">
+		<div class="col-12 col-md-8">
 			<div class="card">
-				<div class="card-header">Register for Kolaahal 2k19</div>
-				<div class="card-body">
+				<div class="card-header bg-danger"><h3>Register for Kolaahal 2k19</h3></div>
+				<div class="card-body bg-primary">
 					<div class="card-text">
 						<div class="form-group row">
 							<label class="col-md-2 col-form-label" for="name">Full Name</label>
@@ -18,11 +31,94 @@
 								<input type="text" class="form-control" name="name" placeholder="enter full name">
 							</div>
 						</div>
+						<div class="form-group row">
+							<label class="col-md-2 col-form-label" for="college">College</label>
+							<div class="col-md-10">
+								<input type="text" name="college" class="form-control" placeholder="enter full college name">
+							</div>
+						</div>
+						<div class="form-group row">
+							<label class="col-12 col-md-2 col-form-label" for=events">Formal Events </label><br>
+								<div class="col-12 col-md-2 form-check form-check-inline">
+								<input type="checkbox" class="form-check-input" name="event1" id="check">
+								<label class="form-check-label" for="event1">Aaroh</label>
+								</div>
+								<div class="col-12 col-md-2 form-check form-check-inline">
+									<input type="checkbox" class="form-check-input" name="event2" id="check">
+									<label class="form-check-label" for="event2">Battle of Bands</label>
+									
+								</div>
+								<div class="col-12 col-md-2 form-check form-check-inline">
+									<input type="checkbox" class="form-check-input" name="event3" id="check">
+									<label class="form-check-label" for="event3">Battle of Bands</label>
+									
+								</div>
+								<div class="col-12 col-md-2 form-check form-check-inline">
+									<input type="checkbox" class="form-check-input" name="event4" id="check">
+									<label class="form-check-label" for="event4">Battle of Bands</label>
+									
+								</div>
+								
+						</div>
+						<div class="form-group row">
+							<label class="col-12 col-md-2 col-form-label" for=events">Informal Events </label><br>
+								<div class="col-12 col-md-2  form-check form-check-inline">
+								<input type="checkbox" class="form-check-input" name="event1" id="check">
+								<label class="form-check-label" for="event1">Puzzle Games</label>
+								</div>
+								<div class="col-12 col-md-2  form-check form-check-inline">
+									<input type="checkbox" class="form-check-input" name="event2" id="check">
+									<label class="form-check-label" for="event2">Bodybuilding</label>
+									
+								</div>
+								<div class="col-12 col-md-2  form-check form-check-inline">
+									<input type="checkbox" class="form-check-input" name="event3" id="check">
+									<label class="form-check-label" for="event3">Battle of Bands</label>
+									
+								</div>
+								<div class="col-12 col-md-2  form-check form-check-inline">
+									<input type="checkbox" class="form-check-input" name="event4" id="check">
+									<label class="form-check-label" for="event4">Battle of Bands</label>
+									
+								</div>
+								
+						</div>
+						<div class="form-group row">
+							<input type="submit" name="submit" class="btn btn-warning col-12 col-md-3 offset-md-2">
+						</div> 
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
 </div>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+            <script type="text/javascript" src="aos-2/dist/aos.js"></script>
+            <script type="text/javascript">
+            	$(document).ready(function()
+            	{
+            		$('#dismiss,.overlay').on('click',function(){
+            			$('#sidebar').removeClass('active');
+            			$('.overlay').removeClass('active');
+            		});
+            		$('#sidebarCollapse').on('click',function(){
+            			$('#sidebar').toggleClass('active');
+            			$('.overlay').addClass('active');
+            			$('.collapse.in').toggleClass('in');
+            			$('a[aria-expanded=true]').attr('aria-expanded','false');
+            		});
+            	});
+            </script>
+            <script type="text/javascript">
+            	AOS.init()
+            	{
+
+            	}
+            </script>
 </body>
 </html>
