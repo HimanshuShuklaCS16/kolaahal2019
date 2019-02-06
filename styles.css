@@ -1,8 +1,9 @@
 *{
   padding:0;
   margin:0;
-  
+
 }
+
 .row-header
 {
     margin:0px auto;
@@ -31,6 +32,12 @@ z-index: 1;
   top:40%;
 color:#ffffcc;
 }
+#head{
+  position:absolute;
+  top:30%;
+  color:#002266;
+  text-shadow: 1px 1px 1px;
+}
 #content
 {
   position:absolute;
@@ -43,7 +50,8 @@ color:#ffffcc;
       margin: 0px auto;
   padding: 70px 0px;
   color: floralwhite;
-}}
+background-repeat: no-repeat;
+}
 .wrapper
 {
     display :block;
@@ -94,7 +102,7 @@ color:#ffffcc;
 }
 #dismiss:hover
 {
-    color: black;
+    color: inherit;
     background-color:floralwhite;
 }
 #sidebar .sidebar-header {
@@ -195,4 +203,20 @@ a,a:hover,a:focus
 {
     height:100vh;
     width:100vw
+}
+.btn-fb
+{
+  background-color: #3b5998;
+}
+.btn-ins
+{
+  background-color: #795a80;
+}
+.btn-tw
+{
+  background-color: #38A1F3;
+}
+.btn-email
+{
+  background-color: #DD4B39;
 }
